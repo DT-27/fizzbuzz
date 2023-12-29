@@ -1,14 +1,14 @@
-//fizzbzz game
-var array = 200;
+//fizzbuzz game
+var array = 101;
 for (var i = 0; i < array; i++) {
- if (i % 3 === 0 ) {
+ if (i % 3 === 0 && i % 5 != 0 ) {
    console.log("fizz " + i);
- }else if (i % 5 === 0) {
+ }else if (i % 5 === 0 && i % 3 != 0 ) {
    console.log("Buzz "+ i);
- }else if (i % 3 || i % 5 === 0) {
+ }else if (i % 3 === 0 && i % 5 === 0) {
    console.log("fizzbuzz " +  i);
  }else {
-   console.log(i);
+   console.log(i + ' is not divisible either');
  }
 
 }
